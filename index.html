@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Científica con IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculator">
+  <h2>Calculadora Científica</h2>
+
+  <input type="text" id="display" disabled>
+
+  <div class="buttons">
+    <button onclick="func('sin')">sin</button>
+    <button onclick="func('cos')">cos</button>
+    <button onclick="func('tan')">tan</button>
+    <button onclick="power()">x²</button>
+
+    <button onclick="add('7')">7</button>
+    <button onclick="add('8')">8</button>
+    <button onclick="add('9')">9</button>
+    <button onclick="add('/')">÷</button>
+
+    <button onclick="add('4')">4</button>
+    <button onclick="add('5')">5</button>
+    <button onclick="add('6')">6</button>
+    <button onclick="add('*')">×</button>
+
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button onclick="add('-')">−</button>
+
+    <button onclick="add('0')">0</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="add('+')">+</button>
+
+    <button onclick="sqrt()">√</button>
+    <button onclick="log()">log</button>
+    <button onclick="clearDisplay()" class="clear">C</button>
+  </div>
+
+  <div class="ai-box">
+    <h3>Sugerencia IA 🤖</h3>
+    <p id="suggestion">Empieza a calcular para recibir sugerencias.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
